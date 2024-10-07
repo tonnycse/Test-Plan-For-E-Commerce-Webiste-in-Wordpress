@@ -1,4 +1,4 @@
-# WordPress WooCommerce Shop - Test Cases Project
+# WordPress WooCommerce Shop - Test Cases 
 
 ## Project Overview
 This project involves setting up a local WordPress site using WooCommerce to create an online shop. The primary goal is to perform testing of different scenarios to ensure the proper functionality of the WooCommerce shop.
