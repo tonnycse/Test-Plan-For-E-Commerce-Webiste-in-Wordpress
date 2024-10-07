@@ -1,0 +1,84 @@
+Test Scenario ID,Test Case ID,Test Case Description,Preconditions,Test Steps,Test Data,Expected Result,Actual Result,Priority,Final Result,Remarks
+TS02,TC2.1,Verify Registered User Login,Must have a registered account,"1. Go to the site
+2. Click on “My Account” 
+3. Enter Email & Password
+4. Click on “Log In”","Email: user@gmail.com, Password: @Pass2024",User will be logged In,As Expected,P1,Pass,
+,TC2.2,Add product to the cart,User is logged in,"1. Log In
+2. Click on ""Add to Cart""
+","Email: user@gmail.com, Password: @Pass2024",Product will be added and cart page will display,As Expected,P1,Pass,
+,TC2.3,"Verify ""Continue Shopping"" Link",User is logged in,"1. Add product to cart
+2. Cart will open, In Cart A message will pop up with ""Continue Shopping"" link
+2. Click on the ""Continue Shopping"" link","Email: user@gmail.com, Password: @Pass2024",Products Page will appear,Message & Link Disappear,P3,Fail,
+,TC2.4,"Verify "" Reduce & Increase Quantity"" Buttons in Cart",User is logged in,"1. Add product to cart
+2. Click on “Reduce Quantity” & ""Increase Quantity"" Button for different items 
+","Email: user@gmail.com, Password: @Pass2024",Product quantity will change based on the selection,As Expected,P2,Pass,
+,TC2.5,Verify ''Remove Item'' Button in Cart,User is logged in,"1. Add product to cart
+2. Click on ''Remove Item'' ","Email: user@gmail.com, Password: @Pass2024",Cart will be empty,As Expected,P2,Pass,
+,TC2.6,Verify Add a Cupon Availability,User is logged in,"1. Add product to cart
+2. Click on “Add a Cupon” 
+2. Enter valid cupon 
+3. Click on Apply","Email: user@gmail.com, Password: @Pass2024",Discount will be added,As Expected,P2,Pass,
+,TC2.7,"Verify ''Add an address for shipping options"" Button in Cart",User is logged in,"1. Add product to cart
+2. Click on ''Add an address for shipping options"" Button in Cart 
+2. Provide invalid information (example: city field only numbers & Postal Code field only alphabets 
+3. Fill up the form
+4. Click on “Update”","Email: user@gmail.com, Password: @Pass2024, City: 1111, Postal Code: ABC",Appropriate error messages are displayed & Failed to update,As Expected,P1,Pass,"Postal Code field is okay but City field needs to be fixed, Entire address should be valid & relevant "
+,TC2.8,"Verify valid Email, Shipping & Billing Address",User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address, Shipping Address , Billing Address 
+4. Select Shipping Options & Payment Options
+5. Click on “Place Order”
+","Email: user@gmail.com, Password: @Pass2024",Order completed successfully,As Expected,P1,Pass,
+,TC2.9,"Verify Pre-filled Email, Shipping & Billing Information",User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Click on “Place Order”
+
+","Email: user@gmail.com, Password: @Pass2026","Email, Shipping & Billing Address will be filled with previously given information",As Expected,P2,Pass,
+,TC2.10,"Verify Invalid Email, Shipping & Billing Address",User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide invalid email address
+4. Provide invalid Shipping Address 
+5. Provide invalid Billing Address (example: only int in all fields)
+6. Select Shipping Options & Payment Options
+7. Click on “Place Order”","Name: 11 11111, Address: Dhaka, 11111, Postal Code: ABC, Phone: ABC",A clear error message will be shown,Order completed successfully,P2,Fail,"Email Address is ok, Name, Shipping & Billing Address still accepting invalid information"
+,TC2.11,Verify Shipping Options,User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address, Shipping Address, Billing Address  
+4. Check all Shipping Options for different orders
+5. Select valid Payment Options 
+6. Click on “Place Order”
+","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order completed successfully,As Expected,P2,Pass,
+,TC2.12,Verify Payment Options,User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address, Shipping Address, Billing Address  
+4. Select Shipping Options 
+5. Check all Payment Options for different orders
+6. Click on “Place Order”
+","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order completed successfully,As Expected,P1,Pass,
+,TC2.13,Verify Add a Note to Your Order Checkbox,User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address, shipping address, billing address
+4. Select Shipping Options & Payment Options   
+5. Select the checkbox to add a note 
+6. Keep the note empty
+7. Click on “Place Order”
+","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Appropriate error messages are displayed & Failed to place order,Order completed successfully ,P3,Fail,
+,TC2.14,Verify Order Has Been Placed Successfully,User is logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Fill up the form
+4. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",A message will show up in the site with all information,As Expected,P1,Pass,
+,TC2.15,Test Multiple Orders,User is logged in,"1. Place Multiple Orders
+2. Click on “My Account” 
+3. Click on “Orders” 
+
+","Email: user@gmail.com, Password: @Pass2024",Clicking 'Orders' will display list of completed orders,As Expected,P2,Pass,
+,TC2.16,Verifiy Orders section storing all placed order,User is logged in,"1. Place Order
+2. Click on “My Account” 
+3. Click on “Orders” 
+4. Click on “View”
+","Email: user@gmail.com, Password: @Pass2024",Clicking 'Orders' will display completed orders. 'View' will show order details.,As Expected,P2,Pass,
+,TC2.17,Verify Order Status,User is logged in,"1. Place Order
+2. Click on “My Account” 
+3. Click on “Orders” 
+
+","Email: user@gmail.com, Password: @Pass2025","Order Status will be visible with Order ID, Date & Bill",As Expected,P2,Pass,

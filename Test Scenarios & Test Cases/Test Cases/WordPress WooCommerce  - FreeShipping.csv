@@ -1,0 +1,25 @@
+Test Scenario ID,Test Case ID,Test Case Description,Preconditions,Test Steps,Test Data,Expected Result,Actual Result,Priority,Final Result,Remarks
+TS05,TC5.1,Verify Free Shipping Eligibility,User is logged in or checking out as a guest,1. Check for free shipping eligibility criteria.,Email: user@gmail.com,Eligibility criteria are clearly defined.,Not Defined,P1,Fail,
+,TC5.2,Check Free Shipping Application,User is logged in or checking out as a guest,"1. Add product to cart with price more than 2000 tk
+2. Or Apply ""Discount"" Cupon to get free shipping 
+",Email: user@gmail.com,Free shipping is applied correctly.,As Expected,P1,Pass,
+,TC5.3,Validate Minimum Purchase Requirement,User is logged in or checking out as a guest,"1. Add product to cart with price more than 2000 tk
+2. Ensure free shipping is applied if minimum purchase amount is met.
+",Email: user@gmail.com,Free shipping is only applied if the requirement is met.,As Expected,P1,Pass,
+,TC5.4,Verify Free Shipping Exclusions,User is logged in or checking out as a guest,1. Purchase Product with less than 2000 taka & without any coupon,Email: user@gmail.com,Free shipping won't be available,As Expected,P2,Pass,
+,TC5.5,Test Free Shipping for Different Billing Methods,User is logged in or checking out as a guest,"1. Add product to cart with price more than 2000 tk
+2. Or Apply ""Discount"" Cupon to get free shipping                          
+3. Select different Billing methods                          
+4. Verigy Free Shipping Application.
+",Email: user@gmail.com,Free shipping is applied correctly for various methods.,As Expected,P2,Pass,
+,TC5.6,Check Free Shipping Calculation,User is logged in or checking out as a guest,"1. Add product to cart with price more than 2000 tk
+2. Or Apply ""Discount"" Cupon to get free shipping                          
+3. Place Order                         
+4. Verify shipping charges with and without promotion.
+",Email: user@gmail.com,Free shipping is reflected correctly in order summary.,As Expected,P1,Pass,
+,TC5.7,Verify Free Shipping Impact on Taxes,User is logged in or checking out as a guest,"1. Add product to cart with price more than 2000 tk
+2. Or Apply ""Discount"" Cupon to get free shipping                          
+3. Place Order                         
+4. Ensure free shipping does not affect tax calculations.
+",Email: user@gmail.com,Taxes are calculated correctly regardless of free shipping.,As Expected,P2,Pass,
+,TC5.8,Test Multiple Free Shipping Scenarios,User is logged in or checking out as a guest,"1. Test free shipping in various scenarios (e.g., use coupon, bill over 2000).",Email: user@gmail.com,Free shipping promotion works in different scenarios.,As Expected,P2,Pass,

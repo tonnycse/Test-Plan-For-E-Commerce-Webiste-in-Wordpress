@@ -1,0 +1,13 @@
+Product Name,E-Commerce Website (WordPress WooCommerce),,,,,TestCase Summary,
+Module Name,,TestCase Start Date,15/09/2024,Test Execution Start Date,18/09/2024,PASS,56
+Epic,,TestCase End Date,18/09/2024,Test Execution End Date,21/09/2024,FAIL,18
+Developer Name (TL),,TestCase Developed By,Tonny,Browser (Tested),,WARNING (PASSED),4
+Test Executed By,Tonny,TestCase Reviewed By,,Performance (Tested),,TOTAL,74
+,,,,,,,
+Test Scenario ID,References,Test Scenario Description,Priority,Number of TestCase,Number of Successful TestCase,Number of Failed TestCase,
+TS01,,Guest Checkout - Complete order without logging in,P1,19,13,6,
+TS02,,Registered User Checkout - Complete order after login,P1,17,14,3,
+TS03,,Payment Method Selection - During Checkout,P1,10,3,7,
+TS04,,Applying Cupon - If Available,P2,12,12,0,
+TS05,,Free Shipping - If Available,P2,8,7,1,
+TS06,,Tax Calculation  ,P2,8,7,1,

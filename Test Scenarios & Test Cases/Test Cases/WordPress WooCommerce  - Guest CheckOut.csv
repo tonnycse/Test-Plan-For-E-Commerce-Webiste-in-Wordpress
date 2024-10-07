@@ -1,0 +1,94 @@
+Test Scenario ID,Test Case ID,Test Case Description,Preconditions,Test Steps,Test Data,Expected Result,Actual Result,Priority,Final Result,Remarks
+TS01,TC1.1,Add product to the cart,User is not logged in,"1. Click on ""Add to Cart""
+
+",,Product will be added and cart page will display,As Expected,P1,Pass,
+,TC1.2,"Verify ""Continue Shopping"" Link",User is not logged in,"1. Add product to cart
+2. Cart will open, In Cart A message will pop up with ""Continue Shopping"" link
+2. Click on the ""Continue Shopping"" link",,Products Page will appear,Message & Link Disappear,P3,Fail,
+,TC1.3,"Verify "" Reduce & Increase Quantity"" Buttons in Cart",User is not logged in,"1. Add product to cart
+2. Click on “Reduce Quantity” & ""Increase Quantity"" Button for different items 
+2. Click on “Proceed to Checkout” 
+3. Fill up the form
+4. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",In order product quantity will be based on the selected amount,As Expected,P2,Pass,
+,TC1.4,Verify ''Remove Item'' Button in Cart,User is not logged in,"1. Add product to cart
+2. Click on ''Remove Item'' ",,Cart will be empty,As Expected,P2,Pass,
+,TC1.5,Verify Add a Cupon,User is not logged in,"1. Add product to cart
+2. Click on “Add a Cupon” 
+2. Enter valid cupon 
+3. Click on Apply",,Discount will be added,As Expected,P2,Pass,
+,TC1.6,"Verify ''Add an address for shipping options"" Button in Cart",User is not logged in,"1. Add product to cart
+2. Click on ''Add an address for shipping options"" Button in Cart 
+2. Provide invalid information (example: city field only numbers & Postal Code field only alphabets 
+3. Fill up the form
+4. Click on “Update”","City: 1111, Postal Code: ABC",Appropriate error messages are displayed & Failed to update,As Expected,P1,Pass,"Postal Code field is okay but City field needs to be fixed, Entire address should be valid & relevant "
+,TC1.7,Verify Error Handling,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Enter incomplete information.
+4. Click on “Place Order”
+",,Appropriate error messages are displayed.,As Expected,P1,Pass,
+,TC1.8,Verify Mandatory Fields,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Check for all mandatory fields.",,Address & Phone Number will be mandatory,Only Address is mandatory,P1,Fail,Phone number should be mandatory
+,TC1.9,Verify Email Address,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide invalid email address
+3. Fill up rest of the form
+4. Click on “Place Order”","Email: usergmail.com , abcde, 11111",Appropriate error messages are displayed.,As Expected,P2,Pass,
+,TC1.10,Verify Invalid Shipping Address,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address
+4. Provide invalid Shipping Address (example: only int in all fields)
+5. Provide valid Billing Address
+6. Select Shipping Options & Payment Options
+7. Click on “Place Order”","Name: 11 11111, Address: Dhaka, 11111, Postal Code: ABC, Phone: ABC","A clear error message is shown, asking the user to correct the shipping address before proceeding with the order placement.",Order completed successfully,P2,Fail,"Fields like: first name, last name, address, city, state can't contain numbers only & also postal code & phone number can't contain alphabets only"
+,TC1.11,Verify City & District ,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address
+4. Provide invalid Shipping Address (example: invalid city & district)
+5. Provide valid Billing Address
+6. Select Shipping Options & Payment Options
+7. Click on “Place Order”","Name: Ms. User, Email: user@gmail.com, City: Dhaka, District: Feni","A clear error message is shown, asking the user to correct the shipping address before proceeding with the order placement.",Order completed successfully,P3,Fail,"If I write Dhaka as city, I can still select Feni as District. This isn't acceptable. "
+,TC1.12,Verify Invalid Billing Address,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address
+4. Provide valid Shipping Address 
+5. Provide invalid Billing Address (example: only int in all fields)
+6. Select Shipping Options & Payment Options
+7. Click on “Place Order”","Name: 11 11111, Address: Dhaka, 11111, Postal Code: ABC, Phone: ABC","A clear error message is shown, asking the user to correct the billing address before proceeding with the order placement.",Order completed successfully,P2,Fail,"Fields like: first name, last name, address, city, state can't contain numbers only & also postal code & phone number can't contain alphabets only"
+,TC1.13,Verify Shipping Options,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address
+4. Provide valid Shipping Address 
+5. Provide valid Billing Address 
+6. Check all Shipping Options for different orders
+6. Select Payment Options
+7. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order completed successfully without user login,As Expected,P2,Pass,
+,TC1.14,Verify Payment Options,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address
+4. Provide valid Shipping Address 
+5. Provide valid Billing Address 
+6. Select Shipping Options 
+7. Check all Payment Options for different orders
+8. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order completed successfully without user login,As Expected,P1,Pass,
+,TC1.15,Verify Add a Note to Your Order Checkbox,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout”
+3. Provide valid email address, shipping address, billing address
+4. Select Shipping Options & Payment Options   
+5. Select the checkbox to add a note 
+6. Keep the note empty
+7. Click on “Place Order”
+","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Appropriate error messages are displayed & Failed to place order,Order completed successfully ,P3,Fail,
+,TC1.16,Verify Order Has Been Placed Successfully,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Fill up the form
+4. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",A message will show up in the site with all information,As Expected,P1,Pass,
+,TC1.17,Verify Order Summary,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Fill up the form
+4. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order summary is accurate.,As Expected,P2,Pass,
+,TC1.18,Verify Guest Checkout Option,User is not logged in,"1. Add product to cart
+2. Click on “Proceed to Checkout” 
+3. Fill up the form
+4. Click on “Place Order”","Email: user@gmail.com, Name: Ms. User, Address: Dhaka",Order completed successfully without user login,As Expected,P1,Pass,
+,TC1.19,Test Multiple Guest Checkouts,User is not logged in,1. Complete multiple guest checkouts with different details.,,All checkouts are processed without issues.,As Expected,P2,Pass,
