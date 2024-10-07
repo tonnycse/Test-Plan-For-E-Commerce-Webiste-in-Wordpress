@@ -2,42 +2,42 @@ Test Scenario ID,Test Case ID,Test Case Description,Preconditions,Test Steps,Tes
 TS04,TC4.1,Verify Coupon Code Availability,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 ",,Add a Coupon option is available,As Expected,P1,Pass,
-,TC4.2,Verify Coupon Code Entry Field is Available,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.2,Verify Coupon Code Entry Field is Available,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 2. Enter a coupon code.",,Coupon code entry field is present.,As Expected,P1,Pass,
-,TC4.3,Check Coupon Code Validation,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.3,Check Coupon Code Validation,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Enter a valid coupon code.
 4. Verify discount application.",Coupon Code: discount,Valid coupon code is accepted and applied.,As Expected,P1,Pass,
-,TC4.4,Verify Invalid Coupon Code,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.4,Verify Invalid Coupon Code,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Enter an invalid coupon code.
 4. Verify discount application.",Coupon Code: AAA,System displays an error message.,As Expected,P1,Pass,
-,TC4.5,Validate Discount Calculation,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.5,Validate Discount Calculation,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Enter a valid coupon code.
 4. Check discount amount.",Coupon Code: discount,Discount is calculated and applied correctly.,As Expected,P1,Pass,
-,TC4.6,Verify Coupon Code Expiry,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.6,Verify Coupon Code Expiry,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Enter an expired coupon code.
 ",Coupon Code: half,System displays an expiry message.,As Expected,P2,Pass,
-,TC4.7,Test Coupon Code Restrictions,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.7,Test Coupon Code Restrictions,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Apply coupon code with restrictions (e.g., minimum purchase)",Coupon Code: discount,Restrictions are enforced; error messages are shown if not met.,As Expected,P2,Pass,
-,TC4.8,Verify Coupon Code Application for Different Products,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.8,Verify Coupon Code Application for Different Products,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Apply coupon code with restrictions (e.g., minimum purchase)",Coupon Code: discount,Coupon code is applied correctly to different products.,As Expected,P2,Pass,
-,TC4.9,Check Coupon Code Usage Limits,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.9,Check Coupon Code Usage Limits,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Attempt to use coupon code twice in the same order",Coupon Code: discount,Displays appropriate message.,As Expected,P2,Pass,
-,TC4.10,Validate Coupon Code Removal,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.10,Validate Coupon Code Removal,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Apply coupon code.
 4. Remove or change coupon code.",Coupon Code: discount,Coupon code can be removed or changed before completing checkout.,As Expected,P2,Pass,
-,TC4.11,Verify Coupon Code Impact on Taxes and Shipping,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.11,Verify Coupon Code Impact on Taxes and Shipping,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Apply coupon code.
 4. Check impact on taxes and shipping",Coupon Code: discount,Coupon code affects taxes and shipping charges correctly.,As Expected,P2,Pass,Coupon provides Free Shipping & reduces Tax 
-,TC4.12,Test Multiple Coupon Codes,User is logged in or checking out as a guest,"1. Add product to cart
+TS04,TC4.12,Test Multiple Coupon Codes,User is logged in or checking out as a guest,"1. Add product to cart
 2. Find out Add a Coupon button 
 3. Apply multiple coupon codes in one transaction.",,Multiple coupon codes are processed correctly or rejected based on system rules.,As Expected,P2,Pass,

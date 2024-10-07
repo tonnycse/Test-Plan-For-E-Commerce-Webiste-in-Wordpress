@@ -2,23 +2,23 @@ Test Scenario ID,Test Case ID,Test Case Description,Preconditions,Test Steps,Tes
 TS06,TC6.1,Verify Tax Calculation,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Review tax calculation on checkout page",Email: user@gmail.com,Taxes are calculated correctly based on order total.,As Expected,P1,Pass,
-,TC6.2,Check Tax Rate Accuracy,User is logged in or checking out as a guest,"1. Add product to cart
+TS06,TC6.2,Check Tax Rate Accuracy,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Verify tax rate used for calculations.",Email: user@gmail.com,Tax rates are accurate and up-to-date.,As Expected,P1,Pass,
-,TC6.3,Validate Tax Exemptions,User is logged in or checking out as a guest,"1. Add product to cart
+TS06,TC6.3,Validate Tax Exemptions,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Apply a tax exemption",Email: user@gmail.com,Tax exemptions are applied correctly.,As Expected,P2,Pass,Applying the 'discount' coupon results in a lower tax amount
-,TC6.4,Verify Tax for Different Locations,User is logged in or checking out as a guest,"1. Add product to cart
+TS06,TC6.4,Verify Tax for Different Locations,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Test tax calculations for various addresses.",Email: user@gmail.com,Taxes are calculated based on shipping address location.,As Expected,P1,Pass,
-,TC6.5,Test Tax Impact on Discounts and Coupons,User is logged in or checking out as a guest,"1. Apply discounts or coupons.
+TS06,TC6.5,Test Tax Impact on Discounts and Coupons,User is logged in or checking out as a guest,"1. Apply discounts or coupons.
 2. Verify tax calculation.",Email: user@gmail.com,Taxes are correctly applied after discounts or coupons.,Applying the 'discount' coupon reduces tax by 5%,P2,Pass,
-,TC6.6,Check Tax Breakdown,User is logged in or checking out as a guest,"1. Add product to the cart
+TS06,TC6.6,Check Tax Breakdown,User is logged in or checking out as a guest,"1. Add product to the cart
 2. Place Order
 3. Review tax breakdown in order summary.",Email: user@gmail.com,Tax breakdown is clear and accurate.,Not Available,P2,Fail,Total Tax is mentioned in Order Summary
-,TC6.7,Verify Tax Calculation for Multiple Items,User is logged in or checking out as a guest,"1. Add multiple products to the cart
+TS06,TC6.7,Verify Tax Calculation for Multiple Items,User is logged in or checking out as a guest,"1. Add multiple products to the cart
 2. Place Order
 3. Verify tax calculations for various product categories.",Email: user@gmail.com,Taxes are correctly calculated for all items.,As Expected,P1,Pass,
-,TC6.8,Test Tax Calculation for Different Shipping Methods,User is logged in or checking out as a guest,"1. Add products to the cart
+TS06,TC6.8,Test Tax Calculation for Different Shipping Methods,User is logged in or checking out as a guest,"1. Add products to the cart
 2. Place Order
 3. Check tax calculations with different shipping methods.",Email: user@gmail.com,Taxes are correctly calculated for all methods.,As Expected,P2,Pass,

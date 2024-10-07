@@ -4,59 +4,59 @@ TS03,TC3.1,Verify Payment Method Options,User is logged in or checking out as a 
 3. Fill up the form
 4. Check available payment methods.
 ","email: user@gmail.com, pass: @user2024",All payment methods are displayed.,As Expected,P1,Pass,
-,TC3.2,Check Payment Method Functionality,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.2,Check Payment Method Functionality,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5.Select each payment method. 
 
 ","email: user@gmail.com, pass: @user2024",Each payment method is selectable,As Expected,P1,Pass,For Direct Bank Transfer & Check Payments only selection option is available
-,TC3.3,Validate Payment Information Entry,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.3,Validate Payment Information Entry,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Enter invalid payment information.
 6. Attempt to proceed.","email: user@gmail.com, pass: @user2024",Validation error messages are displayed.,There is nothing like this,P1,Fail,Direct Bank Transfer & Check Payments should have Enter Payment Information option
-,TC3.4,Verify Payment Method Restrictions,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.4,Verify Payment Method Restrictions,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Attempt to use a restricted payment method
 ","email: user@gmail.com, pass: @user2024","Restrictions are enforced, and error messages are shown if not met.",There is nothing like this,P2,Fail,No payment method restrictions was available
-,TC3.5,Test Payment Method Integration,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.5,Test Payment Method Integration,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 4. Select a payment method. 
 5. Verify payment gateway integration.","email: user@gmail.com, pass: @user2024",Payment method integration works correctly.,Not Available,P1,Fail,
-,TC3.6,Check Error Handling for Invalid Payment Information,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.6,Check Error Handling for Invalid Payment Information,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Select a payment method. 
 6. Enter invalid payment details.
 7. Attempt to submit payment.","email: user@gmail.com, pass: @user2024",Appropriate error messages are displayed.,Not Available,P1,Fail,
-,TC3.7,Verify Payment Confirmation,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.7,Verify Payment Confirmation,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Select a payment method. 
 6. Complete payment process.
 7. Check for payment confirmation display.         ","email: user@gmail.com, pass: @user2024",Payment confirmation is displayed and sent.,Not Available,P1,Fail,
-,TC3.8,Test Payment Method Cancellation,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.8,Test Payment Method Cancellation,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Select a payment method. 
 6. Cancel the payment process.","email: user@gmail.com, pass: @user2024",User is returned to the checkout page.,Not Available,P2,Fail,
-,TC3.9,Verify Payment Refunds,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.9,Verify Payment Refunds,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
 5. Select a payment method. 
 6. Process a payment.
 7. Initiate a refund.","email: user@gmail.com, pass: @user2024",Refund is processed correctly.,Not Available,P2,Fail,
-,TC3.10,Test Multiple Payment Methods,User is logged in or checking out as a guest,"1. Add product to cart
+TS03,TC3.10,Test Multiple Payment Methods,User is logged in or checking out as a guest,"1. Add product to cart
 2. Click on “Proceed to Checkout” 
 3. Fill up the form
 4. Check available payment methods.
